@@ -19,9 +19,11 @@ info: |
 # persist drawings in exports and build
 drawings:
   persist: false
+layout: intro
 ---
 
-# Welcome to Slidev
+
+# Introduction to Frontend Development
 
 Presentation slides for developers
 
@@ -46,40 +48,34 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+layout: presenter
+presenterImage: 'https://saugi.me/images/ogi.png'
+---
+# Ahmad Saugi
+Open-source Frontend Developer
+- Currently studying at <fancy-link href="https://binus.ac.id/">Binus University</fancy-link>
+- Portfolio <fancy-link href="https://saugi.me">saugi.me</fancy-link>
+- Say hi at <fancy-link href="https://instagram.com/asawgi">@asawgi</fancy-link>
+---
 
-# What is Slidev?
+# Kenalan dengan Frontend Development
+Rangkaian workshop hari ini:
+- Instalasi software prasyarat
+- Berkenalan dengan dunia frontend development
+- Roadmap menjadi frontend developer yang baik dan benar
+- Membuat website portofolio sederhana
+- QnA
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+---
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+# Apa aja sih yang perlu dipersiapkan?
+- Visual Studio Code (https://code.visualstudio.com/download)
+- Browser favorit kamu (Firefox/Chrome/Dll)
 
-<br>
-<br>
+---
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
+# Roadmap 
+<Roadmap/>
 
 ---
 
