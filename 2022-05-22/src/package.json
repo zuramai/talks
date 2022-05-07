@@ -11,5 +11,8 @@
     "@slidev/theme-seriph": "*",
     "slidev-theme-penguin": "^1.4.0"
   },
-  "name": "2022-05-22"
+  "name": "2022-05-22",
+  "devDependencies": {
+    "@iconify-json/logos": "^1.1.5"
+  }
 }

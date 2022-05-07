@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "pnpm -C 2022-05-22/src run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
