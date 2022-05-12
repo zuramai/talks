@@ -37,7 +37,7 @@ Presentation slides for developers
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/zuramai/talks" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -50,17 +50,19 @@ The last comment block of each slide will be treated as slide notes. It will be 
 ---
 layout: presenter
 presenterImage: 'https://saugi.me/images/ogi.png'
+class: 'grid  align-self-center justify-self-center'
 ---
 # Ahmad Saugi
 Open-source Frontend Developer
 - Currently studying at <fancy-link href="https://binus.ac.id/">Binus University</fancy-link>
 - Portfolio <fancy-link href="https://saugi.me">saugi.me</fancy-link>
 - Say hi at <fancy-link href="https://instagram.com/asawgi">@asawgi</fancy-link>
+
 ---
 
 # Kenalan dengan Frontend Development
 Rangkaian workshop hari ini:
-- Instalasi software prasyarat
+- Instalasi software prasyarat 
 - Berkenalan dengan dunia frontend development
 - Roadmap menjadi frontend developer yang baik dan benar
 - Membuat website portofolio sederhana
@@ -69,13 +71,26 @@ Rangkaian workshop hari ini:
 ---
 
 # Apa aja sih yang perlu dipersiapkan?
-- Visual Studio Code (https://code.visualstudio.com/download)
+- <akar-icons-vscode-fill style="display:inline-block"/> Visual Studio Code (https://code.visualstudio.com/download)
 - Browser favorit kamu (Firefox/Chrome/Dll)
-
+<div class="flex gap-2 pl-6 pt-3">
+<logos-firefox/>
+<logos-chrome/>
+<logos-brave/>
+<logos-microsoft-edge/>
+</div>
 ---
 
 # Roadmap 
+
 <Roadmap/>
+---
+layout: new-section
+class: "flex items-center justify-center" 
+---
+<ri-html5-fill class="mx-auto text-6xl"/>
+
+# HTML5
 
 ---
 
