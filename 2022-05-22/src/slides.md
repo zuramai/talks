@@ -49,14 +49,19 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 layout: presenter
-presenterImage: 'https://saugi.me/images/ogi.png'
-class: 'grid  align-self-center justify-self-center'
+presenterImage: https://saugi.me/images/ogi.png
+class: grid  align-self-center justify-self-center
 ---
+
 # Ahmad Saugi
 Open-source Frontend Developer
 - Currently studying at <fancy-link href="https://binus.ac.id/">Binus University</fancy-link>
 - Portfolio <fancy-link href="https://saugi.me">saugi.me</fancy-link>
 - Say hi at <fancy-link href="https://instagram.com/asawgi">@asawgi</fancy-link>
+
+<!--
+141
+-->
 
 ---
 
