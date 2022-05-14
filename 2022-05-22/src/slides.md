@@ -65,8 +65,7 @@ Open-source Frontend Developer
 
 ---
 
-# Kenalan dengan Frontend Development
-Rangkaian workshop hari ini:
+# Rangkaian workshop hari ini:
 - Instalasi software prasyarat 
 - Berkenalan dengan dunia frontend development
 - Roadmap menjadi frontend developer yang baik dan benar
@@ -74,21 +73,53 @@ Rangkaian workshop hari ini:
 - QnA
 
 ---
-
+class: "text-center flex items-center"
+---
 # Apa aja sih yang perlu dipersiapkan?
-- <akar-icons-vscode-fill style="display:inline-block"/> Visual Studio Code (https://code.visualstudio.com/download)
-- Browser favorit kamu (Firefox/Chrome/Dll)
-<div class="flex gap-2 pl-6 pt-3">
-<logos-firefox/>
-<logos-chrome/>
-<logos-brave/>
-<logos-microsoft-edge/>
+
+<style>
+.big-logos svg {
+width: 100px;
+height: 100px;
+}
+</style>
+<div grid="~ cols-2 gap-x-10 gap-y-10" class="text-center">
+  <div class="big-logos"><akar-icons-vscode-fill class="inline-block"/></div>
+  <div>
+    <div class="flex justify-center gap-3 big-logos">
+      <logos-firefox/><logos-chrome/><logos-brave/><logos-microsoft-edge/>
+    </div>
+  </div>
+  <div>Visual Studio Code</div>
+  <div>Browser favorit kamu (Firefox/Chrome/Dll)</div>
 </div>
+
+---
+layout: text-image
+media: ./images/ui.webp
+class: "flex items-center"
+---
+# Kenalan dengan Frontend Development
+*Front-end web development* adalah pengembangan situs web yang akan disajikan langsung kepada pengguna melalui penggunaan HTML, CSS, dan JavaScript, sehingga pengguna dapat melihat dan berinteraksi dengan situs web tersebut.
+
 ---
 
 # Roadmap 
-
+https://roadmap.sh
 <Roadmap/>
+
+---
+layout: center
+---
+# Jadi, apakah semuanya perlu dipelajari?
+
+<v-click class='text-center'>
+
+<p class="text-center">Tentu tidak</p>
+
+</v-click>
+---
+
 ---
 layout: new-section
 class: "flex items-center justify-center" 
@@ -96,7 +127,6 @@ class: "flex items-center justify-center"
 <ri-html5-fill class="mx-auto text-6xl"/>
 
 # HTML5
-
 ---
 
 # Navigation
