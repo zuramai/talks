@@ -96,9 +96,10 @@ height: 100px;
 
 ---
 layout: text-image
-media: ./images/ui.webp
+media: /images/ui.webp
 class: "flex items-center"
 ---
+
 # Kenalan dengan Frontend Development
 *Front-end web development* adalah pengembangan situs web yang akan disajikan langsung kepada pengguna melalui penggunaan HTML, CSS, dan JavaScript, sehingga pengguna dapat melihat dan berinteraksi dengan situs web tersebut.
 
@@ -120,6 +121,21 @@ layout: center
 </v-click>
 ---
 
+
+# Spesialisasi di Front-end development
+
+| Game dev | UI Design | Creative | Software Engineer | System Engineer | 
+| --- | --- | --- | --- | --- |
+| <ul><li>ThreeJS</li><li>PixiJS</li><li>BabylonJS</li></ul> | <ul><li>SASS</li><li>Bootstrap</li><li>TailwindCSS</li><li>PostCSS</li></ul> | <ul><li>HTML5 Canvas</li><li>WebGL</li><li>SVG</li><li>GSAP</li></ul> | <ul><li>Vue</li><li>React</li><li>Angular</li></ul> | WebAssembly
+
+---
+layout: iframe
+
+# the web page source
+url: https://bruno-simon.com/
+---
+
+
 ---
 layout: new-section
 class: "flex items-center justify-center" 
@@ -127,28 +143,77 @@ class: "flex items-center justify-center"
 <ri-html5-fill class="mx-auto text-6xl"/>
 
 # HTML5
+
+---
+layout: image-left
+class: "flex  flex-col justify-center"
+image: >-
+  https://www.freecodecamp.org/news/content/images/size/w2000/2020/01/html-examples.jpeg
 ---
 
-# Navigation
+# Apa itu HTML?
+HTML adalah singkatan dari **HyperText Markup Language**.
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+<v-click>
 
-### Keyboard Shortcuts
+Ya, HTML adalah bahasa markup, bukan bahasa pemrograman.
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+</v-click>
 
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<!--
+Seperti yang bisa kalian lihat di gambar disamping, itu adalah contoh kode HTML.
+
+HTML adalah bahasa markup, yaitu bahasa yang digunakan untuk menstruktur sebuah dokumen.
+-->
+
+---
+
+# Basic HTML
+
+HTML terdiri dari kumpulan **_tag_** yang terdiri dari _tag_ pembuka dan penutup.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Judul yang akan ditampilkan di tab browser</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+---
+
+# HTML Tags
+
+HTML terdiri dari bermacam-macam **_tag_**. 
+
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+
+```html
+<p> Lorem Ipsum </p> 
+<span> Lorem Ipsum </span>
+<small> Lorem Ipsum </small>
+<b> Lorem Ipsum </b>
+```
+
+```html
+<h1> Lorem Ipsum </h1>
+<h2> Lorem Ipsum </h2>
+<h3> Lorem Ipsum </h3>
+<h4> Lorem Ipsum </h4>
+<h5> Lorem Ipsum </h5>
+<h6> Lorem Ipsum </h6>
+```
+
+<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
+
+<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
+
+</div>
 
 
 ---
