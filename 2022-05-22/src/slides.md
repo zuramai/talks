@@ -179,10 +179,26 @@ HTML terdiri dari kumpulan **_tag_** yang terdiri dari _tag_ pembuka dan penutup
     <title>Judul yang akan ditampilkan di tab browser</title>
 </head>
 <body>
-    
+    <p>Teks kamu akan muncul disini</p>
 </body>
 </html>
 ```
+
+<hr class="mt-5"/>
+
+<v-click>
+
+Tag HTML itu terdiri dari pembuka dan penutup.
+
+`<p> Hello World </p>`
+
+<ic-round-arrow-right-alt style="color:red; rotate: 270deg; margin: -30px 0;display:inline-block" height="100" width="40"/>
+<ic-round-arrow-right-alt style="color:red; rotate: 270deg; margin: -30px 120px; display:inline-block" height="100" width="40"/>
+<br/>
+
+Ini tag pembuka &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ini tag penutup
+
+</v-click>
 
 ---
 
@@ -190,72 +206,133 @@ HTML terdiri dari kumpulan **_tag_** yang terdiri dari _tag_ pembuka dan penutup
 
 HTML terdiri dari bermacam-macam **_tag_**. 
 
+<div grid="~ cols-2">
 
-<div grid="~ cols-2 gap-2" m="-t-2">
+| Tag | Sebagai |
+| --- | ------- |
+| `<p>` | Paragraf |
+| `<h1>` | Heading 1 |
+| `<h2>` | Heading 2 |
+| `<h3>` | Heading 3 |
+| `<h4>` | Heading 4 |
+| `<h5>` | Heading 5 |
+| `<h6>` | Heading 6 |
+| `<strong>` | Bold |
 
-```html
-<p> Lorem Ipsum </p> 
-<span> Lorem Ipsum </span>
-<small> Lorem Ipsum </small>
-<b> Lorem Ipsum </b>
-```
-
-```html
-<h1> Lorem Ipsum </h1>
-<h2> Lorem Ipsum </h2>
-<h3> Lorem Ipsum </h3>
-<h4> Lorem Ipsum </h4>
-<h5> Lorem Ipsum </h5>
-<h6> Lorem Ipsum </h6>
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
+| Tag | Sebagai |
+| --- | ------- |
+| `<ul>` | List |
+| `<ol>` | List |
+| `<li>` | List |
+| `<img>` | Menampilkan gambar |
+| `<a>` | Link |
+| `<div>` | Pembagian |
+| `<br>` | Membuat baris baru |
 
 </div>
-
-
 ---
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
-# Code
+# CSS
 
-Use code snippets and get the highlighting directly![^1]
+Ada 3 cara untuk menuliskan CSS. Antara lain:
 
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
+- Inline CSS
+- Internal CSS
+- External CSS
 
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
+---
+
+<div grid="~ cols-2">
+
+<h1>Inline CSS</h1>
+<h1 v-click="1">Internal CSS</h1>
+
+<div class="pr-5">
+
+  Inline CSS adalah code css yang ditulis secara langsung pada elemen HTML. 
+
+  Contoh:
+
+  ```html
+  <p style="color: red">Text warna merah</p>
+  ```
+</div>
+
+<div v-click="1">
+
+  Internal CSS adalah code css yang ditulis pada tag `<style>`, dan di dalam tag `<head>`.
+
+  Contoh:
+
+  ```html
+  <head>
+  <style>
+    p {
+      color: red;
+    }
+  </style>
+  </head>
+  <body>
+    <p>Text warna merah</p>
+  </body>
+  ```
+</div>
+
+</div>
+
+---
+
+
+<h1>External CSS</h1>
+
+External CSS adalah code css yang ditulis pada sebuah file berekstensi .css.
+
+Contoh:
+
+<div class="grid grid-cols-[1fr,1fr]">
+
+<div class="pr-5">
+
+
+File `index.html`
+```html {all|4}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Judul</h1>
+    <p>Paragraf</p>
+  </body>
+</html>
 ```
 
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
+<arrow v-click="1" x1="420" y1="450" x2="350" y2="350" color="red" width="3" arrowSize="1" />
 
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
 
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+</div>
 
+<div>
+
+File `style.css`
+```css
+h1 {
+  font-size: 16px;
+}
+
+p {
+  color: red;
+}
+
+```
+</div>
+
+</div>
 ---
 
 # Components
