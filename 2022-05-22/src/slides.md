@@ -230,6 +230,18 @@ HTML terdiri dari bermacam-macam **_tag_**.
 | `<br>` | Membuat baris baru |
 
 </div>
+
+---
+
+# Form
+
+Form
+
+
+---
+
+# 
+
 ---
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
@@ -334,6 +346,58 @@ p {
 
 </div>
 ---
+
+# CSS Selector
+
+CSS Selector berguna untuk memilih elemen yang akan kamu berikan style.
+
+```css
+p { color: blue }
+```
+
+<arrow x1="75" x2="75" y1="350" y2="250" color="#ccc" width="3" arrowSize="2"/>
+<arrow x1="250" x2="250" y1="350" y2="250" color="#ccc" width="3" arrowSize="2"/>
+<arrow x1="450" x2="450" y1="350" y2="250" color="#ccc" width="3" arrowSize="2"/>
+
+<p class="absolute top-[350px] left-[40px]"> SELECTOR </p>
+<p class="absolute top-[350px] left-[210px]"> PROPERTY </p>
+<p class="absolute top-[350px] left-[425px]"> VALUE </p>
+
+<style>
+
+code, kbd, samp, pre {
+  font-size: 3rem
+}
+.slidev-code {
+  padding: 2rem 0 1rem !important
+}
+
+</style>
+
+---
+
+# ID dan Class
+
+a
+
+---
+
+# Property yang paling umum digunakan
+
+<Zigzags
+          class="absolute transform scale-75 top-20 right-24"
+          :class="{ 'left-0': $attrs.reverse }"
+        />
+
+```css
+code {
+  color: blue
+}
+```
+
+---
+
+
 
 # Components
 
