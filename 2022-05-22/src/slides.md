@@ -69,7 +69,8 @@ Open-source Frontend Developer
 - Instalasi software prasyarat 
 - Berkenalan dengan dunia frontend development
 - Roadmap menjadi frontend developer yang baik dan benar
-- Membuat website portofolio sederhana
+- Belajar HTML dan CSS
+- Membuat website sederhana menggunakan HTML dan CSS
 - QnA
 
 ---
@@ -235,8 +236,188 @@ HTML terdiri dari bermacam-macam **_tag_**.
 
 # Form
 
-Form
+`<form>` adalah sebuah tag untuk membungkus tag-tag yang berisikan user input, yaitu:
 
+
+<table>
+
+<tr>
+
+<td>
+
+```html
+<input type="text">
+```
+</td>
+<td><input type="text" class="border border-gray-500"></td>
+</tr>
+<tr>
+<td>
+
+```html
+<input type="password">
+```
+</td>
+<td><input type="password" class="border border-gray-500"></td>
+</tr>
+<tr>
+<td>
+
+```html
+<input type="checkbox">
+```
+
+</td> 
+<td>
+
+<input type="checkbox" class="border border-gray-500">
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+```html
+<textarea></textarea>
+```
+
+</td> <td> <textarea class="border border-gray-500"></textarea> </td>
+
+</tr>
+<tr>
+
+<td> 
+
+```html
+<select>
+  <option>Pilih salah satu</option>
+  <option>Indonesia</option>
+</select>
+```
+
+</td>
+<td> 
+<select>
+  <option>Pilih salah satu</option>
+  <option>Indonesia</option>
+</select>
+</td>
+
+</tr>
+</table>
+
+---
+
+# Membuat Struktur HTML yang Rapi
+
+<div grid="~ cols-2 flow-row-dense" class="gap-5">
+
+<div v-click="1">
+
+Manusia ketika dianggap sebagai folder:
+
+</div>
+
+
+<div v-click="2">
+
+Manusia ketika dibuat sebagai folder (tapi lebih rapi):
+
+</div>
+
+<div v-click="1">
+
+```txt
+👨‍🦱 manusia
+├── mata
+├── rambut
+├── perut
+├── pundak
+├── jari
+└── mata-kaki
+```
+
+</div>
+
+<div v-click="2">
+
+```txt
+👨‍🦱 manusia
+├── 📁 kepala
+│   ├── mata
+│   └── rambut
+├── 📁 badan
+│   ├── perut
+│   └── pundak
+└── 📁 kaki
+    ├── jari
+    └── mata-kaki
+```
+
+</div>
+</div>
+
+---
+
+# Membuat Struktur HTML yang Rapi
+
+<div grid="~ cols-2 flow-row-dense" class="gap-5">
+
+<div v-click="1">
+Contoh HTML yang tidak rapi:
+</div>
+<div v-click="2">
+Contoh HTML yang rapi:
+</div>
+<div v-click="1">
+
+```html
+<body>
+
+<h1>Selamat datang</h1>
+<p>Silakan isi form dibawah idni untuk mendaftar</p>
+<form>
+<p>Nama anda:</p>
+<input type="text">
+<p>Pesan:</p>
+<textarea></textarea>
+</form>
+</main>
+
+</body>
+```
+
+</div>
+
+<div v-click="2">
+
+```html
+<body>
+  <header>
+    <h1>Selamat datang</h1>
+  </header>
+  <main>
+    <p>Silakan isi form dibawah ini untuk mendaftar</p>
+    <form method="POST">
+      <div class="form-input">
+        <p>Nama anda:</p>
+        <input type="text">
+      </div>
+      <div class="form-input">
+        <p>Pesan:</p>
+        <textarea></textarea>
+      </div>
+      <button> Submit </button>
+    </form>
+  </main>
+</body>
+```
+
+</div>
+
+</div>
 
 ---
 
