@@ -173,7 +173,7 @@ HTML adalah bahasa markup, yaitu bahasa yang digunakan untuk menstruktur sebuah 
 
 HTML terdiri dari kumpulan **_tag_** yang terdiri dari _tag_ pembuka dan penutup.
 
-```html
+```html {all|1|2,9|3,5|4|6-8}
 <!DOCTYPE html>
 <html>
 <head>
@@ -184,6 +184,36 @@ HTML terdiri dari kumpulan **_tag_** yang terdiri dari _tag_ pembuka dan penutup
 </body>
 </html>
 ```
+
+<p v-click="1">
+
+`<!DOCTYPE html>` ditulis agar browser mengetahui bahwa yang akan file yang dibuka itu akan dirender sebagai HTML.
+
+</p>
+
+<p v-click="2">
+
+`<html>` membungkus semua elemen HTML kecuali `<!DOCTYPE html>`
+
+</p>
+
+<p v-click="3">
+
+`<head>` berisikan data-data yang menjelaskan tentang file HTML ini
+
+</p>
+
+<!-- <p v-click="4">
+
+`<title>` berisi teks yang akan dijadikan judul sebuah halaman
+
+</p> -->
+
+<p v-click="5">
+
+`<body>` berisi segala hal yang akan ditampilkan sebagai konten website.
+
+</p>
 
 <hr class="mt-5"/>
 
@@ -228,7 +258,7 @@ HTML terdiri dari bermacam-macam **_tag_**.
 | `<img>` | Menampilkan gambar |
 | `<a>` | Link |
 | `<div>` | Pembagian |
-| `<br>` | Membuat baris baru |
+| `<button>` | Membuat tombol |
 
 </div>
 
@@ -270,6 +300,7 @@ HTML terdiri dari bermacam-macam **_tag_**.
 </td> 
 <td>
 
+<input type="checkbox" class="border border-gray-500 mr-2">
 <input type="checkbox" class="border border-gray-500">
 
 </td>
@@ -368,6 +399,7 @@ Manusia ketika dibuat sebagai folder (tapi lebih rapi):
 <div v-click="1">
 Contoh HTML yang tidak rapi:
 </div>
+
 <div v-click="2">
 Contoh HTML yang rapi:
 </div>
@@ -421,7 +453,9 @@ Contoh HTML yang rapi:
 
 ---
 
-# 
+# CSS
+
+CSS adalah singkatan dari Cascading Style Sheet
 
 ---
 layout: image-right
@@ -456,7 +490,7 @@ Ada 3 cara untuk menuliskan CSS. Antara lain:
 
 <div v-click="1">
 
-  Internal CSS adalah code css yang ditulis pada tag `<style>`, dan di dalam tag `<head>`.
+  Internal CSS adalah code css yang ditulis dengan menggunakan tag `<style>`, dan di dalam tag <br/>` <head>`.
 
   Contoh:
 
@@ -550,7 +584,7 @@ code, kbd, samp, pre {
   font-size: 3rem
 }
 .slidev-code {
-  padding: 2rem 0 1rem !important
+  padding: 2rem 3rem 1rem !important
 }
 
 </style>
@@ -559,259 +593,104 @@ code, kbd, samp, pre {
 
 # ID dan Class
 
-a
+Id dan class adalah sebuah attribute yang dapat menjadi selector CSS.
+
+<div class="grid grid-cols-[1fr,1fr]">
+
+<div class="pr-5">
+
+
+File `index.html`
+```html {8|10-13}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <p id="besar">Tulisan ini besar</p>
+
+    <p class="tulisan-merah">Satu</p>
+    <p class="tulisan-merah">Dua</p>
+    <p class="tulisan-merah">Tiga</p>
+    <p class="tulisan-merah">Empat</p>
+  </body>
+</html>
+```
+
+
+</div>
+
+<div>
+
+File `style.css`
+```css {1-3|5-7}
+#besar {
+  font-size: 16px;
+}
+
+p {
+  color: red;
+}
+
+```
+</div>
+
+</div>
 
 ---
+
+<center>
 
 # Property yang paling umum digunakan
 
-<Zigzags
-          class="absolute transform scale-75 top-20 right-24"
-          :class="{ 'left-0': $attrs.reverse }"
-        />
-
-```css
-code {
-  color: blue
-}
-```
-
----
+</center>
 
 
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
+| Tag | Sebagai | Contoh Penggunaan | 
+| --- | ------- | ----------------- |
+| `color` | Warna teks | `color: blue` |
+| `background-color` | Warna elemen | `background-color: #FFF` |
+| `width` | Heading 2 | `width: 100px` |
+| `height` | Heading 3 | `height: 100px` |
+| `margin` | Heading 4 | `margin: 10px` |
+| `padding` | Heading 5 | `padding: 15px` |
+| `font-size` | Heading 6 | `font-size: 16px` |
+| `font-family` | Bold | `font-family: Arial` |
 
 
 ---
-class: px-20
+layout: text-image
+media: images/dribbble.png
 ---
+# Sebuah Tips: Inspirasi Design
 
-# Themes
+Kalian bisa mendapatkan inspirasi-inspirasi web design di internet, beberapa diantaranya yang paling populer adalah:
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+- https://behance.net
+- https://dribbble.com
+- https://pinterest.com
 
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
+<p v-click>Lakukanlah ATM (Amati-Tiru-Modifikasi) </p>
 
 ---
-preload: false
+layout: text-image
+media: images/colorhuntpanjang.png
 ---
+# Sebuah Tips: Pemilihan Warna
 
-# Animations
+Kalian bisa mendapatkan *color pallete* dan kombinasi warna yang bagus yang bisa digunakan di website kalian. 
 
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
+- https://colorhunt.co/
+- https://flatuicolors.com/
+- https://coolors.co/
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+<p v-click>Lakukanlah ATM (Amati-Tiru-Modifikasi) </p>
 
 
 ---
-layout: center
-class: text-center
+layout: intro
 ---
 
-# Learn More
-
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+# QnA

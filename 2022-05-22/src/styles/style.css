@@ -1,0 +1,4 @@
+
+#slide-content > svg:last-child {
+    z-index: 11
+}
