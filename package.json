@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -C 2022-05-22/src run dev",
+    "build": "pnpm -C 2022-05-22/src run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
