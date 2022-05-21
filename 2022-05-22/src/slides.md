@@ -125,10 +125,13 @@ layout: center
 
 # Spesialisasi di Front-end development
 
+<div v-click>
+
 | Game dev | UI Design | Creative | Software Engineer | System Engineer | 
 | --- | --- | --- | --- | --- |
 | <ul><li>ThreeJS</li><li>PixiJS</li><li>BabylonJS</li></ul> | <ul><li>SASS</li><li>Bootstrap</li><li>TailwindCSS</li><li>PostCSS</li></ul> | <ul><li>HTML5 Canvas</li><li>WebGL</li><li>SVG</li><li>GSAP</li></ul> | <ul><li>Vue</li><li>React</li><li>Angular</li></ul> | WebAssembly
 
+</div>
 ---
 layout: iframe
 
@@ -154,6 +157,12 @@ image: >-
 
 # Apa itu HTML?
 HTML adalah singkatan dari **HyperText Markup Language**.
+
+<v-click>
+
+HTML adalah bahasa yang digunakan untuk menyusun dokumen yang akan dirender di browser.
+
+</v-click>
 
 <v-click>
 
@@ -652,12 +661,29 @@ p {
 | --- | ------- | ----------------- |
 | `color` | Warna teks | `color: blue` |
 | `background-color` | Warna elemen | `background-color: #FFF` |
-| `width` | Heading 2 | `width: 100px` |
-| `height` | Heading 3 | `height: 100px` |
-| `margin` | Heading 4 | `margin: 10px` |
-| `padding` | Heading 5 | `padding: 15px` |
-| `font-size` | Heading 6 | `font-size: 16px` |
-| `font-family` | Bold | `font-family: Arial` |
+| `width` | Lebar elemen | `width: 100px` |
+| `height` | Tinggi elemen | `height: 100px` |
+| `margin` | Jarak antar elemen | `margin: 10px` |
+| `padding` | Jarak elemen dengan konten | `padding: 15px` |
+| `font-size` | Ukuran teks | `font-size: 16px` |
+| `font-family` | Jenis font | `font-family: Verdana` |
+
+---
+
+<center>
+
+# Property yang paling umum digunakan
+
+</center>
+
+
+| Tag | Sebagai | Contoh Penggunaan | 
+| --- | ------- | ----------------- |
+| `border` | Garis border | `border: 1px solid black` |
+| `border-radius` | Lengkungan sudut elemen | `border-radius: 5px` |
+| `position` | Mengatur tipe posisi elemen | `position: fixed` |
+| `display` | Mengatur tampilnya suatu elemen | `width: 100px` |
+| `text-align` | Mengatur perataan sebuah paragraf | `width: 100px` |
 
 
 ---
@@ -687,6 +713,18 @@ Kalian bisa mendapatkan *color pallete* dan kombinasi warna yang bagus yang bisa
 - https://coolors.co/
 
 <p v-click>Lakukanlah ATM (Amati-Tiru-Modifikasi) </p>
+
+---
+layout: text-image
+media: images/w3schools.png
+---
+# Tahap selanjutnya
+
+Berikut website yang bisa digunakan untuk belajar lebih lanjut:
+
+- https://www.w3schools.com/html/
+- https://www.w3schools.com/css/
+- https://www.w3schools.com/js/
 
 
 ---
