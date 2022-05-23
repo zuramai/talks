@@ -4,17 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "dev": "pnpm -C 2022-05-22/src run dev",
     "build": "pnpm -C 2022-05-22/src run build",
-=======
-    "dev": "pnpm -C 2022-05-22 run dev",
-    "export": "pnpm --filter \"2022-*\" export",
-<<<<<<< HEAD
->>>>>>> 273e3d1 (chore: export and build command)
-=======
-    "buuild": "pnpm --filter \"2022-*\" build",
->>>>>>> f9c3a3b (chore: build command)
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -41,3 +32,4 @@
     "vite-svg-loader": "^3.3.0"
   }
 }
+
