@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "dev": "pnpm -C 2022-05-22/src run dev",
     "build": "pnpm -C 2022-05-22/src run build",
+=======
+    "dev": "pnpm -C 2022-05-22 run dev",
+    "export": "pnpm --filter \"2022-*\" export",
+>>>>>>> 273e3d1 (chore: export and build command)
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -27,6 +32,8 @@
   "homepage": "https://github.com/zuramai/talks#readme",
   "devDependencies": {
     "@iconify/json": "^2.1.41",
-    "unplugin-icons": "^0.14.3"
+    "playwright-chromium": "^1.22.2",
+    "unplugin-icons": "^0.14.3",
+    "vite-svg-loader": "^3.3.0"
   }
 }
