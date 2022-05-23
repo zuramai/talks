@@ -25,7 +25,7 @@ layout: intro
 
 # Introduction to Frontend Development
 
-Presentation slides for developers
+
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -639,7 +639,7 @@ File `style.css`
   font-size: 16px;
 }
 
-p {
+.tulisan-merah {
   color: red;
 }
 
@@ -682,8 +682,8 @@ p {
 | `border` | Garis border | `border: 1px solid black` |
 | `border-radius` | Lengkungan sudut elemen | `border-radius: 5px` |
 | `position` | Mengatur tipe posisi elemen | `position: fixed` |
-| `display` | Mengatur tampilnya suatu elemen | `width: 100px` |
-| `text-align` | Mengatur perataan sebuah paragraf | `width: 100px` |
+| `display` | Mengatur tampilnya suatu elemen | `display: block` |
+| `text-align` | Mengatur perataan sebuah paragraf | `text-align: justify` |
 
 
 ---
