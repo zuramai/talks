@@ -3,7 +3,7 @@
   "scripts": {
     "build": "slidev build src/slides.md ",
     "dev": "slidev src/slides.md --open",
-    "export": "slidev export src/slides.md  "
+    "export": "slidev export src/slides.md"
   },
   "name": "2022-05-22"
 }
