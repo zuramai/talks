@@ -5,8 +5,7 @@ import Components from 'unplugin-vue-components/vite'
 export default {
   plugins: [
     svgLoader(), 
-    Icons({
-    }),
+    Icons({}),
     Components({ /* options */ }),
   ],
 }
